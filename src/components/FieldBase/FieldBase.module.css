@@ -1,0 +1,47 @@
+.groupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.labelForm {
+  transition: color 0.25s;
+}
+
+.inputForm {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #e5bf4c;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #e3d6d6;
+  font-size: 17px;
+
+  transition: border 0.25s;
+}
+
+.textareaForm {
+  resize: none;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 160px;
+}
+
+.inputForm::placeholder {
+  color: #c9cadc;
+}
+
+.groupForm:hover .labelForm {
+  color: #ceba7d;
+}
+
+.groupForm:hover .inputForm,
+.inputForm:focus-within {
+  border: 1px solid #ceba7d;
+}
+
+.errorMessage {
+  color: #d30000 !important;
+}

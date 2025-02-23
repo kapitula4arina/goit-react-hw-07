@@ -1,0 +1,10 @@
+.noContacts {
+  text-align: center;
+}
+
+.loading {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #e5bf4c;
+}
