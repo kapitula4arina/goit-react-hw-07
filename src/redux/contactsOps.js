@@ -39,7 +39,7 @@ export const addContact = createAsyncThunk(
     try {
       const contact = await toast.promise(axios.post('/contacts', body), {
         loading: 'Adding contact...',
-        success: `${body.firstname} added successfully!`,
+        success: `${body.name} added successfully!`,
         error: 'Oops... something went wrong',
       });
       return contact.data;
